@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lindsay's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><strong>What projects I'm working on</strong></h1>
+        <table>
+            <thead>
+                <th>Tech Moms</th>
+                <th>Project 2</th>
+                <th>Project 3</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><a href="https://lwolfgramm.github.io/portfolio/"
+                        title="Tech Moms Portfolio Project" target="_blank">
+                        <img src="https://static.wixstatic.com/media/5c5ac3_c18287846f5146e9b9be1da8e0f9eac9~mv2.png/v1/fill/w_80,h_80,al_c,q_85,usm_0.66_1.00_0.01/TECH-MOMS%20LOGO%20-%20700x700_edited.webp" width="200"
+                            alt="Tech Moms logo"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+             
+            </tbody>
+
+        </table>
+        <h2>For Fun</h2>
+        <table>
+            <thead>
+                <th>Survey using HTML & CSS</th>
+                <th>Project 2</th>
+                <th>Project 3</th>
+                
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </header>
+
+    <div>
+       
+        <h2>References</h2>
+        <table id="references">
+        <thead>
+            <th><strong>Name</strong></th>
+            <th><strong>Relation</strong></th>
+            <th><strong>Email</strong></th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Elaina Erickson</td>
+                <td>USPS</td>
+                <td>elainaerickson@mail.weber.edu</td>
+            </tr>
+            <tr>
+                <td>Adrienne (Adi) Eror</td>
+                <td>Tech-Moms</td>
+                <td>eror.adrienne@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Jennifer Baxter</td>
+                <td>Tech-Moms</td>
+                <td>baxterjen02@gmail.com</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+
+    
+
+    <script>
+
+
+        let text = "<tr><th>Name</th><th>Email</th></tr>";
+
+        // Array of objects 
+        var people = [
+            { name: "Elaina Erickson", email: "elainaerickson@mail.weber.edu" },
+            { name: "Adrienne (Adi) Eror", email: "eror.adrienne@gmail.com"},
+            { name: "Jennifer Baxter", email: "baxterjen02@gmail.com"},
+        ];
+
+        // For loop for references
+        for(let i = 0; i < people.length; i++) {
+            text += "<tr><td>" + people[i].name + "</td><td> " + people[i].email + "</td></tr>";
+        }
+
+        // Send results to screen
+        document.getElementById("references").innerHTML = text;
+    </script>
+    
+</body>
+</html>
